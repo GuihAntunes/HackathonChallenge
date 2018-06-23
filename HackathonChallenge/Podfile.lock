@@ -14,6 +14,9 @@ PODS:
   - GooglePlaces (2.6.0):
     - GoogleMaps/Base (= 2.6.0)
   - lottie-ios (2.5.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxDataSources (3.0.2):
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - GooglePlacePicker
   - GooglePlaces
   - lottie-ios
+  - R.swift
   - RxCocoa
   - RxDataSources
   - RxSwift
@@ -42,6 +46,8 @@ SPEC REPOS:
     - GooglePlacePicker
     - GooglePlaces
     - lottie-ios
+    - R.swift
+    - R.swift.Library
     - RxCocoa
     - RxDataSources
     - RxSwift
@@ -54,10 +60,12 @@ SPEC CHECKSUMS:
   GooglePlacePicker: e4488625effb006f59de49e14b7a603e463e4261
   GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: db72e54b267a99c10798642f18c2fea3b8d5167a
+PODFILE CHECKSUM: fbc44d970c3c5158d5c2dd653d91b54d5c572bca
 
 COCOAPODS: 1.5.3

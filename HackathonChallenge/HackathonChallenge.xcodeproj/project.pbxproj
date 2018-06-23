@@ -15,6 +15,8 @@
 		0E482B5620DE87B800E9150B /* MockedAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B5520DE87B800E9150B /* MockedAPI.json */; };
 		0E482B5820DE88CA00E9150B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E482B5720DE88CA00E9150B /* SplashViewController.swift */; };
 		0E482B6120DE89D800E9150B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B6020DE89D800E9150B /* Colors.xcassets */; };
+		0E482B6320DE8C4700E9150B /* noodles.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B6220DE8C4600E9150B /* noodles.json */; };
+		0E482B6F20DE8E9300E9150B /* Colors+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E482B6E20DE8E9300E9150B /* Colors+Custom.swift */; };
 		121F4D9FE9A51369E02CECF7 /* Pods_HackathonChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFE21A890D517C5B51DE33A /* Pods_HackathonChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +28,11 @@
 		0E482B4920DE7D5B00E9150B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E482B4B20DE7D5B00E9150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E482B5120DE85BB00E9150B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		0E482B5520DE87B800E9150B /* MockedAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MockedAPI.json; path = "HackathonChallenge/Resources/Json Files/MockedAPI.json"; sourceTree = SOURCE_ROOT; };
+		0E482B5520DE87B800E9150B /* MockedAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MockedAPI.json; path = "HackathonChallenge/Resources/Json Files/API/MockedAPI.json"; sourceTree = SOURCE_ROOT; };
 		0E482B5720DE88CA00E9150B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0E482B6020DE89D800E9150B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0E482B6220DE8C4600E9150B /* noodles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noodles.json; sourceTree = "<group>"; };
+		0E482B6E20DE8E9300E9150B /* Colors+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Custom.swift"; sourceTree = "<group>"; };
 		60FCA45AF0489268307D378B /* Pods-HackathonChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonChallenge/Pods-HackathonChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8BFE21A890D517C5B51DE33A /* Pods_HackathonChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE25933CA3853D0771E9E3FB /* Pods-HackathonChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonChallenge/Pods-HackathonChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,8 +92,12 @@
 		0E482B5A20DE88DE00E9150B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				0E482B5720DE88CA00E9150B /* SplashViewController.swift */,
-				0E482B5120DE85BB00E9150B /* Item.swift */,
+				0E482B6D20DE8E6500E9150B /* Extensions */,
+				0E482B6620DE8C8500E9150B /* Model */,
+				0E482B6720DE8C8C00E9150B /* View */,
+				0E482B6820DE8C9700E9150B /* ViewModel */,
+				0E482B6920DE8C9D00E9150B /* Service */,
+				0E482B6A20DE8CAD00E9150B /* Interactor */,
 				0E482B3F20DE7D5800E9150B /* AppDelegate.swift */,
 			);
 			path = Source;
@@ -123,7 +131,8 @@
 		0E482B5E20DE891900E9150B /* Json Files */ = {
 			isa = PBXGroup;
 			children = (
-				0E482B5520DE87B800E9150B /* MockedAPI.json */,
+				0E482B6520DE8C6100E9150B /* API */,
+				0E482B6420DE8C5400E9150B /* Lottie Animations */,
 			);
 			path = "Json Files";
 			sourceTree = "<group>";
@@ -134,6 +143,67 @@
 				0E482B4B20DE7D5B00E9150B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E482B6420DE8C5400E9150B /* Lottie Animations */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B6220DE8C4600E9150B /* noodles.json */,
+			);
+			path = "Lottie Animations";
+			sourceTree = "<group>";
+		};
+		0E482B6520DE8C6100E9150B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B5520DE87B800E9150B /* MockedAPI.json */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0E482B6620DE8C8500E9150B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B5120DE85BB00E9150B /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E482B6720DE8C8C00E9150B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B5720DE88CA00E9150B /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E482B6820DE8C9700E9150B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E482B6920DE8C9D00E9150B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0E482B6A20DE8CAD00E9150B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0E482B6D20DE8E6500E9150B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B6E20DE8E9300E9150B /* Colors+Custom.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		26FE296250AAD6DE3B9E82AA /* Frameworks */ = {
@@ -214,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E482B6320DE8C4700E9150B /* noodles.json in Resources */,
 				0E482B6120DE89D800E9150B /* Colors.xcassets in Resources */,
 				0E482B4A20DE7D5B00E9150B /* LaunchScreen.storyboard in Resources */,
 				0E482B4720DE7D5B00E9150B /* Assets.xcassets in Resources */,
@@ -257,6 +328,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -267,6 +339,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -304,6 +377,7 @@
 			files = (
 				0E482B5820DE88CA00E9150B /* SplashViewController.swift in Sources */,
 				0E482B5220DE85BB00E9150B /* Item.swift in Sources */,
+				0E482B6F20DE8E9300E9150B /* Colors+Custom.swift in Sources */,
 				0E482B4020DE7D5800E9150B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

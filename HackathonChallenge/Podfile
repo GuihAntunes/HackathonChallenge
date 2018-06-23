@@ -14,5 +14,6 @@ target 'HackathonChallenge' do
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
   pod 'lottie-ios'
+  pod 'R.swift'
 
 end
