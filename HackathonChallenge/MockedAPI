@@ -1,0 +1,77 @@
+{
+   "status":200,
+   "message":"We found some food for you!",
+   "category_list":[
+      {
+        "name" : "Asian Food"
+        "items" : [{
+        "id":1,
+        "name":"Shrimp Wok",
+        "description":"Rice, shrimp and lettuce, basically.",
+        "img_url":"https://restorando-res.cloudinary.com/image/upload/b_rgb:000000,c_pad,f_auto,g_center,h_720,w_1280/v1/restaurant_photos/y//10476/95707/restaurante_don-wok_itaim-bibi_dwokaltares-8.jpg",
+        "category_name":"Asian Food",
+        "ingredient_array":[
+           "Shrimp",
+           "Broccoli",
+           "Rice",
+           "Carrots"
+        ]
+     },
+     {
+        "id":2,
+        "name":"Chicken Wok",
+        "description":"Rice, lettuce, egg and chicken.",
+        "img_url":"https://u.tfstatic.com/restaurant_photos/875/279875/169/612/don-wok-asian-food-sugestao-prato-fd6fa.jpg",
+        "category_name":"Asian Food",
+        "ingredient_array":[
+           "Chicken",
+           "Egg",
+           "Broccoli",
+           "Rice",
+           "Carrots"
+        ]
+     }]
+        ,
+        "name" : "Pizza"
+        "items" : [{
+        "id":3,
+        "name":"Pepperoni",
+        "description":"The way we like it: A LOT OF cheese and pepperoni!",
+        "img_url":"http://www.tudogostoso.com.br/images/recipes/000/119/893/277814/277814_original.jpg?mode=crop&width=600&height=450",
+        "category_name":"Pizza",
+        "ingredient_array":[
+           "Pepperoni",
+           "Cheese",
+           "Tomato Sauce",
+           "Pasta"
+        ]
+     },
+     {
+        "id":4,
+        "name":"Margherita",
+        "description":"Just as conceived: cheese, tomatoes and basil. Few olives on top as well.",
+        "img_url":"http://www.pizzadopaulista.com.br/wp-content/uploads/2014/09/Pizza-Margherita.jpg",
+        "category_name":"Pizza",
+        "ingredient_array":[
+           "Cheese",
+           "Basil",
+           "Tomato",
+           "Olives",
+           "Tomato Sauce"
+        ]
+     },
+     {
+        "id":5,
+        "name":"Cheese",
+        "description":"Cheese lover, that's for you: just a huge amount of CHEESE.",
+        "img_url":"http://millarestaurante.com.br/wp-content/uploads/2017/10/Milla-Restaurante-e-Pizzaria-Mussarela.jpg",
+        "category_name":"Pizza",
+        "ingredient_array":[
+           "Cheese",
+           "Pasta",
+           "Tomato Sauce",
+           "Olives"
+        ]
+     }]
+   }]
+}

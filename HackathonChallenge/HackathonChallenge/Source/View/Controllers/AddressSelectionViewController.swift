@@ -1,5 +1,5 @@
 //
-//  SplashViewController.swift
+//  AddressSelectionViewController.swift
 //  HackathonChallenge
 //
 //  Created by Guilherme Antunes on 23/06/18.
@@ -7,30 +7,28 @@
 //
 
 import UIKit
-import Lottie
+import GooglePlaces
 
-class SplashViewController: UIViewController {
+class AddressSelectionViewController: UIViewController, Identifiable {
 
     // MARK: - Outlets
-    private var animationView : LOTAnimationView?
+    @IBOutlet weak var addressTextView: UITextView?
     
     // MARK: - Properties
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupController()
     }
     
     // MARK: - Private Methods
-    private func playInitialAnimation() {
-        
-    }
-    
     private func setupController() {
         view.backgroundColor = UIColor.healthyGreen()
     }
     
     // MARK: - Actions
-
+    @IBAction func addAddress(_ sender: UIBarButtonItem) {
+        showGMSController()
+    }
 }

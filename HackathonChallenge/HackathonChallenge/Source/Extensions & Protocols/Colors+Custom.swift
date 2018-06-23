@@ -14,15 +14,15 @@ extension UIColor {
         if #available(iOS 11.0, *) {
             return UIColor(named: "Healthy Green")
         } else {
-            return UIColor(displayP3Red: 0.369, green: 0.451, blue: 0.078, alpha: 1.0)
+            return UIColor(displayP3Red: 0.451, green: 0.784, blue: 0.663, alpha: 1.0)
         }
     }
     
-    static var healthyRed = { () -> UIColor? in
+    static var healthyBlue = { () -> UIColor? in
         if #available(iOS 11.0, *) {
-            return UIColor(named: "Healthy Red")
+            return UIColor(named: "Healthy Blue")
         } else {
-            return UIColor(displayP3Red: 0.749, green: 0.259, blue: 0.149, alpha: 1.0)
+            return UIColor(displayP3Red: 0.216, green: 0.231, blue: 0.267, alpha: 1.0)
         }
     }
     
