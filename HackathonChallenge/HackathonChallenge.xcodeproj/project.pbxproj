@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0E482B4020DE7D5800E9150B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E482B3F20DE7D5800E9150B /* AppDelegate.swift */; };
-		0E482B4220DE7D5800E9150B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E482B4120DE7D5800E9150B /* ViewController.swift */; };
 		0E482B4520DE7D5800E9150B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B4320DE7D5800E9150B /* Main.storyboard */; };
 		0E482B4720DE7D5B00E9150B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B4620DE7D5B00E9150B /* Assets.xcassets */; };
 		0E482B4A20DE7D5B00E9150B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B4820DE7D5B00E9150B /* LaunchScreen.storyboard */; };
+		0E482B5220DE85BB00E9150B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E482B5120DE85BB00E9150B /* Item.swift */; };
+		0E482B5620DE87B800E9150B /* MockedAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B5520DE87B800E9150B /* MockedAPI.json */; };
+		0E482B5820DE88CA00E9150B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E482B5720DE88CA00E9150B /* SplashViewController.swift */; };
+		0E482B6120DE89D800E9150B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E482B6020DE89D800E9150B /* Colors.xcassets */; };
 		121F4D9FE9A51369E02CECF7 /* Pods_HackathonChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFE21A890D517C5B51DE33A /* Pods_HackathonChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E482B3C20DE7D5800E9150B /* HackathonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E482B3F20DE7D5800E9150B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E482B4120DE7D5800E9150B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E482B4420DE7D5800E9150B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E482B4620DE7D5B00E9150B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E482B4920DE7D5B00E9150B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E482B4B20DE7D5B00E9150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E482B5120DE85BB00E9150B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0E482B5520DE87B800E9150B /* MockedAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MockedAPI.json; path = "HackathonChallenge/Resources/Json Files/MockedAPI.json"; sourceTree = SOURCE_ROOT; };
+		0E482B5720DE88CA00E9150B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0E482B6020DE89D800E9150B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		60FCA45AF0489268307D378B /* Pods-HackathonChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonChallenge/Pods-HackathonChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8BFE21A890D517C5B51DE33A /* Pods_HackathonChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE25933CA3853D0771E9E3FB /* Pods-HackathonChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonChallenge/Pods-HackathonChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +67,73 @@
 		0E482B3E20DE7D5800E9150B /* HackathonChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				0E482B3F20DE7D5800E9150B /* AppDelegate.swift */,
-				0E482B4120DE7D5800E9150B /* ViewController.swift */,
-				0E482B4320DE7D5800E9150B /* Main.storyboard */,
-				0E482B4620DE7D5B00E9150B /* Assets.xcassets */,
-				0E482B4820DE7D5B00E9150B /* LaunchScreen.storyboard */,
-				0E482B4B20DE7D5B00E9150B /* Info.plist */,
+				0E482B5920DE88D400E9150B /* Resources */,
+				0E482B5A20DE88DE00E9150B /* Source */,
+				0E482B5F20DE893A00E9150B /* Supporting Files */,
 			);
 			path = HackathonChallenge;
+			sourceTree = "<group>";
+		};
+		0E482B5920DE88D400E9150B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B5E20DE891900E9150B /* Json Files */,
+				0E482B5D20DE890500E9150B /* Strings */,
+				0E482B5C20DE88FE00E9150B /* Assets */,
+				0E482B5B20DE88F800E9150B /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E482B5A20DE88DE00E9150B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B5720DE88CA00E9150B /* SplashViewController.swift */,
+				0E482B5120DE85BB00E9150B /* Item.swift */,
+				0E482B3F20DE7D5800E9150B /* AppDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0E482B5B20DE88F800E9150B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B4820DE7D5B00E9150B /* LaunchScreen.storyboard */,
+				0E482B4320DE7D5800E9150B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0E482B5C20DE88FE00E9150B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B4620DE7D5B00E9150B /* Assets.xcassets */,
+				0E482B6020DE89D800E9150B /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0E482B5D20DE890500E9150B /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		0E482B5E20DE891900E9150B /* Json Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B5520DE87B800E9150B /* MockedAPI.json */,
+			);
+			path = "Json Files";
+			sourceTree = "<group>";
+		};
+		0E482B5F20DE893A00E9150B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E482B4B20DE7D5B00E9150B /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		26FE296250AAD6DE3B9E82AA /* Frameworks */ = {
@@ -149,9 +214,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E482B6120DE89D800E9150B /* Colors.xcassets in Resources */,
 				0E482B4A20DE7D5B00E9150B /* LaunchScreen.storyboard in Resources */,
 				0E482B4720DE7D5B00E9150B /* Assets.xcassets in Resources */,
 				0E482B4520DE7D5800E9150B /* Main.storyboard in Resources */,
+				0E482B5620DE87B800E9150B /* MockedAPI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +260,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -202,6 +270,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -233,7 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E482B4220DE7D5800E9150B /* ViewController.swift in Sources */,
+				0E482B5820DE88CA00E9150B /* SplashViewController.swift in Sources */,
+				0E482B5220DE85BB00E9150B /* Item.swift in Sources */,
 				0E482B4020DE7D5800E9150B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

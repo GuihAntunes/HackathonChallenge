@@ -13,5 +13,6 @@ target 'HackathonChallenge' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+  pod 'lottie-ios'
 
 end
