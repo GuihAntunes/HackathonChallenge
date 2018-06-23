@@ -13,6 +13,7 @@ class AddressSelectionViewController: UIViewController, Identifiable {
 
     // MARK: - Outlets
     @IBOutlet weak var addressTextView: UITextView?
+    @IBOutlet weak var forwardButton: UIButton?
     
     // MARK: - Properties
     
@@ -20,11 +21,18 @@ class AddressSelectionViewController: UIViewController, Identifiable {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupController()
+        setupButton()
     }
     
     // MARK: - Private Methods
     private func setupController() {
         view.backgroundColor = UIColor.healthyGreen()
+    }
+    
+    private func setupButton() {
+        forwardButton?.layer.borderWidth = 10
+        forwardButton?.layer.cornerRadius = 10
+        forwardButton?.layer.borderColor = UIColor.white.cgColor
     }
     
     // MARK: - Actions

@@ -47,7 +47,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9B-7X-V2N">
-                                <rect key="frame" x="99" y="714" width="177" height="40"/>
+                                <rect key="frame" x="12" y="674" width="351" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0bM-lA-pQa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="Start ordering food">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,10 +62,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="K42-HZ-YVL" firstAttribute="trailing" secondItem="o9B-7X-V2N" secondAttribute="trailing" constant="12" id="3fr-iO-N5X"/>
                             <constraint firstItem="K42-HZ-YVL" firstAttribute="trailing" secondItem="P4t-Dl-iJx" secondAttribute="trailing" constant="16" id="6Nf-5r-fUX"/>
                             <constraint firstItem="P4t-Dl-iJx" firstAttribute="centerX" secondItem="jja-bY-Jkf" secondAttribute="centerX" id="Im8-wy-aPY"/>
                             <constraint firstItem="o9B-7X-V2N" firstAttribute="centerX" secondItem="jja-bY-Jkf" secondAttribute="centerX" id="W3n-kv-jbI"/>
                             <constraint firstItem="K42-HZ-YVL" firstAttribute="bottom" secondItem="o9B-7X-V2N" secondAttribute="bottom" constant="24" id="aDG-kT-rcf"/>
+                            <constraint firstItem="o9B-7X-V2N" firstAttribute="leading" secondItem="K42-HZ-YVL" secondAttribute="leading" constant="12" id="cjl-NB-qpJ"/>
                             <constraint firstItem="P4t-Dl-iJx" firstAttribute="centerY" secondItem="jja-bY-Jkf" secondAttribute="centerY" id="iOI-DQ-h7f"/>
                             <constraint firstItem="P4t-Dl-iJx" firstAttribute="leading" secondItem="K42-HZ-YVL" secondAttribute="leading" constant="16" id="qn3-zT-PdC"/>
                         </constraints>
@@ -79,6 +84,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addressTextView" destination="P4t-Dl-iJx" id="c8v-Kz-peT"/>
+                        <outlet property="forwardButton" destination="o9B-7X-V2N" id="u72-SH-1fu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dF-Dv-2Ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
